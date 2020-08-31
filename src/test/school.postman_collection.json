@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "7a8987e9-5604-4a41-b931-a7fbe3145182",
+		"name": "school",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "all students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/student/1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\" : \"1234\",\n\"firstName\" : \"first\",\n\"lastName\" : \"last\",\n\"email\" : \"email@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update student",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\" : \"1234\",\n\"firstName\" : \"firstN\",\n\"lastName\" : \"last\",\n\"email\" : \"email@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/student/1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/student/1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/course",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/student/1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\" : \"1234\",\n\"firstName\" : \"first\",\n\"lastName\" : \"last\",\n\"email\" : \"email@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update course",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\" : \"1234\",\n\"name\" : \"ttt\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/course/1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/course/12346",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"12346"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "enroll course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/course/1234/enroll/1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"1234",
+						"enroll",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all grades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/grade",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create grade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"studentId\" : \"1234\",\n\"courseId\" : \"1234\",\n\"grade\" : \"100\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/grade",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get best student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/course/1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get easy course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/statistics/easyCourse",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"statistics",
+						"easyCourse"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
